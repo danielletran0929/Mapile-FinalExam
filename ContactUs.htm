@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="ContactUs.css">
+  <script>
+    function validateContact() {
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const email = document.getElementById('email').value;
+      const comment = document.getElementById('comment').value;
+
+      if (firstName && lastName && email && comment) {
+        alert("Thank you for your feedback!");
+        window.location.href = "home.html";
+      } else {
+        alert("Please fill all fields.");
+      }
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+    </nav>
+  </header>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="VideoGallery.htm">Gallery</a>
+  <a href="LogIn.htm">Log-in</a>
+  <a href="ContactUs.htm">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+ 
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+<h1>Contact Us</h1>
+  <!-- Contact Form -->
+  <main>
+    <form onsubmit="return validateContact()">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" required>
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="comment">Comment:</label>
+      <textarea id="comment" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+     <div class="footer-links">
+      <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+    
+    <p>&copy; Copyright @2024. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beverage</title>
+    <link rel="stylesheet" type="text/css" href="collection.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+    </nav>
+  </header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="VideoGallery.htm">Gallery</a>
+  <a href="LogIn.htm">Log-in</a>
+  <a href="ContactUs.htm">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+ 
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+	<p>Beverages Recipe</p>
+	
+</div>
+<div class="recipe-container">
+    <div class="recipe-card">
+      <h1 class="trending-title">Smoothies & Juices</h1>
+      <div class="recipe-content">
+        <div class="recipe-image">
+          <img src="potion.png" alt="Health Potion">
+          <div class="stars">
+            <span>⭐</span>
+            <span>⭐</span>
+            <span>⭐</span>
+          </div>
+          <h1 class="trending-title">Health Potion</h1>
+        </div>
+        <div class="recipe-details">
+          <h2>Recipe:</h2>
+          <ul>
+            <li>Water: 1 cup</li>
+            <li>Vinegar: 1/2 cup</li>
+            <li>Food Coloring: A few drops (choose your favorite color)</li>
+            <li>Dish Soap: 1 tablespoon </li>
+            <li>Baking Soda: 2 tablespoons</li>
+            <li>!!!Secret Ingredient Dry Ice: A small chunk (handled with gloves)</li>
+            <li>!!Disclaimer: Warning: This experiment should only be performed under adult supervision. Dry ice c.</li>
+          </ul>
+        </div>
+      </div>
+       <div class="arrow-container">
+        <div class="arrow right"><img src="arrow-left.png"></div>
+        <div class="arrow right"><img src="arrow-right.png"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+<footer>
+    <div class="footer-links">
+      <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+ 
+    
+    <p>&copy; Copyright @2024. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

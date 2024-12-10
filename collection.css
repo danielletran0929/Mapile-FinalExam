@@ -1,0 +1,244 @@
+@font-face {
+  font-family: furius;
+  src: url(furius-3.ttf);
+}
+@font-face{
+  font-family: silk;
+  src: url(Silkscreen-Bold.ttf);
+}
+@font-face{
+  font-family: abibas;
+  src: url(Abibas.ttf);
+}
+@font-face{
+  font-family: english;
+  src: url(engravers-old-english-bt.ttf);
+}
+
+body{
+  background-image: url(bgm.png);
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+p{
+  margin-top: 50px;
+  text-align: center;
+  font-family: english;
+  font-size: 90px;
+  color: #ffffff;
+  text-shadow: 3px 3px#7d4c24;
+}
+.technique{
+  margin-top: 50px;
+  text-align: center;
+  font-family: english;
+  font-size: 90px;
+  color: #ffffff;
+  text-shadow: 3px 3px#7d4c24;
+  margin-bottom: 125px;
+
+}
+  
+
+h4{
+  font-family: abibas;
+  color: white;
+
+}
+
+h5{
+  font-family: abibas;
+  text-align: justify;
+  text-shadow: -3px -3px 0 #000, 3px -3px 0 #000,
+          -3px 3px 0 #000, 3px 3px 0 #000;
+  text-decoration: none;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(stonwall.png);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: furius;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ff7c1c;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+    }
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    header nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      font-family: abibas;
+      font-size: 30px;
+    }
+    header nav a {
+      color: #fff;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    header nav a:hover {
+      background-color: #575757;
+    }
+footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 225px;
+      font-size: 30px;
+      text-decoration: none;
+      
+    }
+    footer .footer-links {
+      margin: 10px 0;
+      font-family: abibas;
+      text-decoration: none;
+    }
+    footer .footer-links a {
+      color: #ddd;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+      font-family: abibas;
+      text-decoration: none;
+    }
+    footer .footer-links a:hover {
+      color: #fff;
+      background-color: #575757;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+.recipe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.recipe-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #f4d03f;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+
+.trending-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.recipe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.recipe-image {
+  position: relative;
+  max-width: 45%;
+}
+
+.recipe-image img {
+  width: 100%;
+  border: 5px solid #f4d03f;
+  border-radius: 10px;
+}
+
+.stars {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.recipe-details {
+  max-width: 50%;
+  text-align: left;
+}
+
+.recipe-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px #000;
+  color: #fff;
+}
+
+.recipe-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.recipe-details ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.arrow {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  cursor: pointer;
+}
+
+.arrow.left {
+  transform: rotate(180deg); /* Left arrow points in the opposite direction */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

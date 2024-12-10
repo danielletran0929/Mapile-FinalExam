@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log-In</title>
+  <link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+     <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+     
+    </nav>
+  </header>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="VideoGallery.htm">Gallery</a>
+  <a href="LogIn.htm">Log-in</a>
+  <a href="ContactUs.htm">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+ 
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+  <h1>Log-in</h1>
+
+  <!-- Login Form -->
+   <form id="loginForm" onsubmit="validateLogin(event)">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <input type="submit" value="Log In">
+  </form>
+
+  <script>
+    function validateLogin(event) {
+      // Prevent form's default submission
+      event.preventDefault();
+
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username === "IIT406" && password === "LETRAN") {
+        alert("Login successful!");
+        // Redirect to the desired page
+        window.location.href = "home.html";
+      } else {
+        alert("Invalid username or password.");
+      }
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+  
+    
+    <p>&copy; Copyright @2024. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

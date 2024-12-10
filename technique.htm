@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Techniques</title>
+    <link rel="stylesheet" type="text/css" href="collection.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+     
+    </nav>
+  </header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="VideoGallery.htm">Gallery</a>
+  <a href="LogIn.htm">Log-in</a>
+  <a href="ContactUs.htm">Contact</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "175px";
+ 
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+	<p class="technique">Cooking Techniques</p>
+	
+</div>
+<div class="recipe-container">
+    <div class="recipe-card">
+      <h1 class="trending-title">Step-by-Step Guide</h1>
+      <div class="recipe-content">
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mZr9fT2QUhI?si=S7B5V_JdTezngP6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h1 class="trending-title"> Edible Brick with Chicken and Vegetables</h1>
+        </div>
+        <div class="recipe-details">
+          <h2>Recipe:</h2>
+          <h5>The Edible Brick with Chicken and Vegetables in Dungeon Meshi is a whimsical yet practical culinary creation that perfectly encapsulates the series' blend of fantasy and food. Crafted to resemble a sturdy brick, this dish is prepared by compressing layers of succulent chicken, hearty vegetables, and flavorful seasonings into a compact, durable form. The "brick" is designed for adventurers who need a portable and energy-packed meal while navigating treacherous dungeons. Despite its rugged appearance, the dish is surprisingly tender and bursting with flavor, combining the savory richness of chicken with the freshness of the vegetables. Its practicality as both a weapon-like object and a satisfying meal highlights the inventive cooking techniques often featured in the world of Dungeon Meshi.</h5>
+        </div>
+      </div>
+       <div class="arrow-container">
+        <div class="arrow right"><img src="arrow-left.png"></div>
+        <div class="arrow right"><img src="arrow-right.png"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+<footer>
+    <div class="footer-links">
+     <a href="Collection.htm">Collections</a>
+      <a href="technique.htm">Technique</a>
+      <a href="beverage.htm">Beverage</a>
+      <a href="photography.htm">Photography</a>
+   
+    
+    <p>&copy; Copyright @2024. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
